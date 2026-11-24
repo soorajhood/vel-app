@@ -22,7 +22,7 @@ pipeline {
 				stage ('deploy') {
 					steps {
 							sh "sudo cp -r /mnt/vel-app/index.html /var/www/html/"
-							sh "sudo cp -r /mnt/vel-app/dev.html /var/www/html/'
+							sh "sudo cp -r /mnt/vel-app/dev.html /var/www/html/"
 							ch "sudo chmod -R 777 /var/www/html/"
 					
 					}
