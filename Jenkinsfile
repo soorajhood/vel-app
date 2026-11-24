@@ -1,7 +1,7 @@
 pipeline {
 			agent {
 					label {
-						label "built-in"
+						label "slave-1"
 						customWorkspace "/mnt/vel-app"
 					}
 			}
@@ -11,7 +11,7 @@ pipeline {
 				
 				stage ('deploy') {
 					steps {
-							echo "hello all"
+							echo "hello all in slave-1"
 					
 					}
 				
